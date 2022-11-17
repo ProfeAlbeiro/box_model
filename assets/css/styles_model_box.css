@@ -160,7 +160,7 @@ body{
 }
 .imagen img{    
     width: auto;
-    height: 80%;
+    height: 70%;
     padding: 5px;
     position: absolute;
     top: 50%;
@@ -468,7 +468,7 @@ section{
 /* ------------------------------------------------------------------------------------- */
 
 header{    
-    background-image: url(header.jpg);
+    background-image: url(../img/header.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
