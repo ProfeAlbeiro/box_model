@@ -219,10 +219,7 @@ body{
 
 /* Ver */
 .ver{
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;    
+    width: 100%;    
     height: 50px;    
     text-align: center;
     padding: 5px;    
@@ -646,6 +643,14 @@ header{
     line-height: 1;
     display: inline-block;
     vertical-align: middle;
+}
+.nos-col-izq .ver,
+.nos-col-der .ver{
+    width: auto;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
 }
 .nos-col-izq .ver a{
     margin-right: 0;
