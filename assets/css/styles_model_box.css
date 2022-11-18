@@ -620,10 +620,7 @@ header{
 /* Tarjeta */
 .nos-col-izq .tarjeta,
 .nos-col-der .tarjeta{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
+    position: relative;    
 }
 .nos-col-izq .subtitulo,
 .nos-col-der .subtitulo{    
