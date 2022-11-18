@@ -175,8 +175,8 @@ body{
 
 /* Títulos */
 .titulo{
-    height: 70px;    
-    line-height: 70px;
+    height: 75px;    
+    line-height: 75px;
     text-align: center;    
     color: #FFF;
     font-family: 'Work Sans', sans-serif;
@@ -219,7 +219,10 @@ body{
 
 /* Ver */
 .ver{
-    width: 100%;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;    
     height: 50px;    
     text-align: center;
     padding: 5px;    
@@ -365,9 +368,102 @@ iframe{
 /* ------------------------------------------------------------------------------------- */
 
 /* Formulario */
-.form{}
-
-.form-subtitulo{}
+.form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.form-subtitulo{        
+    width: 100%;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px;
+    background: #CCC;
+	border-radius: 4px 4px 0 0;
+    font-size: 1.2em;
+}
+.form-subtitulo h2{
+    line-height: 1.3;
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-cuerpo{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    right: 10px;
+    bottom: 60px;
+    background: #FFF;
+    padding: 15px 10px;    
+}
+.form-control{
+    width: 100%;
+    height: 45px;    
+    padding: 5px;    
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.label{    
+    padding: 5px;
+    width: 35%;
+    height: 100%;
+    line-height: 1;
+    vertical-align: middle;
+    float: left;
+    text-align: right;    
+    padding-right: 15px;
+    font-size: 1.4em;
+}
+.input{
+    padding: 5px;
+    width: 65%;
+    height: 100%;    
+    float: left;
+    border-radius: 4px;
+    border: 1px solid #999;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.4em;	
+}
+.form-control-textarea{
+    width: 100%;
+    height: 65%;    
+    line-height: 40px;    
+    padding: 5px;    
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.textarea{
+    width: 65%;
+    height: 100%;
+    resize: none;
+    border: 1px solid #999;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.4em;
+    border-radius: 4px;
+    padding: 5px;
+    line-height: 1.4;	
+}
+.form-pie{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;    
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    background: #CCC;    
+	border-radius: 0 0 4px 4px;
+}
+.form-pie .boton{    
+    padding: 8px;
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
 
@@ -528,17 +624,21 @@ header{
 .nos-col-izq .tarjeta,
 .nos-col-der .tarjeta{
     position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 .nos-col-izq .subtitulo,
-.nos-col-der .subtitulo{
-    position: relative;
-    width: 100%;
+.nos-col-der .subtitulo{    
+    position: relative;    
 }
 .nos-col-izq .parrafo,
 .nos-col-der .parrafo{
-    position: relative;
-    width: 100%;
-    height: 60%;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    right: 10px;
+    bottom: 60px;
     line-height: 11vh;    
 }
 .nos-col-izq .parrafo p,
@@ -546,12 +646,6 @@ header{
     line-height: 1;
     display: inline-block;
     vertical-align: middle;
-}
-.nos-col-izq .ver,
-.nos-col-der .ver{
-    position: absolute;
-    width: 96%;
-    bottom: 10px;    
 }
 .nos-col-izq .ver a{
     margin-right: 0;
@@ -562,7 +656,7 @@ header{
 .nos-col-izq .subtitulo,
 .nos-col-izq .parrafo{
     text-align: right;
-    padding-right: 15px; 
+    padding-right: 15px;
 }
 .nos-col-der .subtitulo,
 .nos-col-der .parrafo{
